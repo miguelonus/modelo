@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica Tema 5 - Módulo 2</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- X3DOM -->
+  <script src="https://www.x3dom.org/download/x3dom.js"></script>
+  <link rel="stylesheet" href="https://www.x3dom.org/download/x3dom.css">
+
+  <style>
+    body {
+      background-color: #f4f9fd;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    h1 {
+      color: #0d47a1; /* azul fuerte */
+      font-weight: 700;
+    }
+
+    h2 {
+      color: #1976d2; /* azul más suave */
+      font-weight: 500;
+    }
+
+    .lead {
+      color: #455a64; /* gris azulado elegante */
+      font-weight: 500;
+    }
+
+    x3d {
+      width: 100%;
+      height: 600px;
+      border: 1px solid #ced4da;
+      background-color: #ffffff;
+      border-radius: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      x3d {
+        height: 400px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      x3d {
+        height: 300px;
+      }
+    }
+
+    .card {
+      background-color: #ffffff;
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+    }
+
+    .footer-text {
+      font-style: italic;
+      text-align: center;
+      margin-top: 2rem;
+      color: #607d8b;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container py-5">
+    <h1 class="text-center mb-3">PRÁCTICA TEMA 5 DEL MÓDULO 2</h1>
+    <h2 class="text-center mb-4 fs-4">Generación de la malla de un modelo hasta su publicación en internet</h2>
+
+    <div class="mb-3 text-center">
+      <p class="lead">Miguel Gallego Angulo</p>
+    </div>
+
+    <div class="card mb-4">
+      <div class="card-body">
+        <x3d>
+          <scene>
+	<Viewpoint position="11.43191 -11.89641 4.57873" orientation="0.61994 -0.03955 0.78366 1.54295" 
+	zNear="10.96496" zFar="32.36788" centerOfRotation="0.00000 0.00000 0.00000" fieldOfView="0.78540" description="defaultX3DViewpointNode"></Viewpoint>
+            <inline url="https://raw.githubusercontent.com/miguelonus/modelo/refs/heads/main/base_5kfaces.x3d"></inline>
+          </scene>
+        </x3d>
+      </div>
+    </div>
+
+    <div class="footer-text">
+      M2: Digitalización del patrimonio cultural, 4ª edición
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
